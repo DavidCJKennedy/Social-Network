@@ -24,6 +24,10 @@
 		CE0CBF191D96D19D000FA4A3 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF181D96D19D000FA4A3 /* MaterialTextField.swift */; };
 		CE0CBF1C1D980F06000FA4A3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF1B1D980F06000FA4A3 /* DataService.swift */; };
 		CE0CBF1E1D981079000FA4A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0CBF1D1D981079000FA4A3 /* GoogleService-Info.plist */; };
+		CE0CBF201D9864A1000FA4A3 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF1F1D9864A1000FA4A3 /* FeedVC.swift */; };
+		CE0CBF221D99BBEF000FA4A3 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF211D99BBEF000FA4A3 /* PostCell.swift */; };
+		CE0CBF241D9B18F3000FA4A3 /* MaterialImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF231D9B18F3000FA4A3 /* MaterialImage.swift */; };
+		CE0CBF271D9ED41F000FA4A3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF261D9ED41F000FA4A3 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		CE0CBF181D96D19D000FA4A3 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		CE0CBF1B1D980F06000FA4A3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		CE0CBF1D1D981079000FA4A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE0CBF1F1D9864A1000FA4A3 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		CE0CBF211D99BBEF000FA4A3 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CE0CBF231D9B18F3000FA4A3 /* MaterialImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialImage.swift; sourceTree = "<group>"; };
+		CE0CBF261D9ED41F000FA4A3 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FF0FE8FDFB11B28A54DAFAAF /* Pods_Socialite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Socialite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0CBEF21D96BC64000FA4A3 /* SignInVC.swift */,
+				CE0CBF1F1D9864A1000FA4A3 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -131,6 +140,8 @@
 				CE0CBF111D96BF26000FA4A3 /* MaterialView.swift */,
 				CE0CBF161D96C30A000FA4A3 /* MaterialButton.swift */,
 				CE0CBF181D96D19D000FA4A3 /* MaterialTextField.swift */,
+				CE0CBF211D99BBEF000FA4A3 /* PostCell.swift */,
+				CE0CBF231D9B18F3000FA4A3 /* MaterialImage.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 		CE0CBF071D96BC86000FA4A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE0CBF261D9ED41F000FA4A3 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -296,14 +308,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0CBF201D9864A1000FA4A3 /* FeedVC.swift in Sources */,
 				CE0CBF151D96BF7B000FA4A3 /* Constants.swift in Sources */,
 				CE0CBEF31D96BC64000FA4A3 /* SignInVC.swift in Sources */,
+				CE0CBF271D9ED41F000FA4A3 /* Post.swift in Sources */,
 				CE0CBF171D96C30A000FA4A3 /* MaterialButton.swift in Sources */,
 				CE0CBEF91D96BC64000FA4A3 /* Socialite.xcdatamodeld in Sources */,
 				CE0CBEF11D96BC64000FA4A3 /* AppDelegate.swift in Sources */,
 				CE0CBF1C1D980F06000FA4A3 /* DataService.swift in Sources */,
 				CE0CBF121D96BF26000FA4A3 /* MaterialView.swift in Sources */,
 				CE0CBF191D96D19D000FA4A3 /* MaterialTextField.swift in Sources */,
+				CE0CBF221D99BBEF000FA4A3 /* PostCell.swift in Sources */,
+				CE0CBF241D9B18F3000FA4A3 /* MaterialImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
