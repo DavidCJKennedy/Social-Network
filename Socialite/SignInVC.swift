@@ -20,9 +20,10 @@ class SignInVC: UIViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
-        if let _ = KeychainWrapper.defaultKeychainWrapper().stringForKey(KEY_UID) {
-            performSegueWithIdentifier("goToFeed", sender: nil)
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+        //if let _ = KeychainWrapper.defaultKeychainWrapper.stringForKey(KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     }
 
@@ -31,24 +32,24 @@ class SignInVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onLoginBtnTapped(sender: AnyObject) {
+    @IBAction func onLoginBtnTapped(_ sender: AnyObject) {
         if let email = emailField.text, let password = passwordField.text {
-            FIRAuth.auth()?.signInWithEmail(email, password: password, completion: { (user, error) in
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
                     print("User authenticated wth firebase")
                     if let user = user {
                         let userData = ["provider": user.providerID]
-                        self.completeSignIn(user.uid, userData: userData)
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                 } else {
-                    FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: {(user, error) in
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: {(user, error) in
                         if error != nil {
                             print("Unable to authenticate with Firebase")
                         } else {
                             print("Successfully authenticated with firebase")
                             if let user = user {
                                 let userData = ["provider": user.providerID]
-                                self.completeSignIn(user.uid, userData: userData)
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                             
                             }
@@ -58,10 +59,17 @@ class SignInVC: UIViewController {
     }
 }
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
-        DataService.ds.createFirbaseDBUser(id, userData: userData)
-        let keychainResult = KeychainWrapper.defaultKeychainWrapper().setString(id, forKey: KEY_UID)
-        print("Data saved to keychain \(keychainResult)")
-        performSegueWithIdentifier("goToFeed", sender: nil)
+        DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
+        print("DAVID: \(KeychainWrapper.standard.hasValue(forKey: KEY_UID))")
+        
+        if KeychainWrapper.standard.hasValue(forKey: KEY_UID) == false {
+            let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+            print("Data saved to keychain \(keychainResult)")
+            performSegue(withIdentifier: "goToSettings", sender: nil)
+        } else {
+            let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+            print("Data saved to keychain \(keychainResult)")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
     }
-    
+    }
 }

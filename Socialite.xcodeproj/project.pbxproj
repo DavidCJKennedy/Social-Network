@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4FE66742E4A7541541B1AE89 /* Pods_Socialite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FE8FDFB11B28A54DAFAAF /* Pods_Socialite.framework */; };
+		CE03487F1DBCE6FD0044CE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE03487E1DBCE6FD0044CE11 /* Assets.xcassets */; };
+		CE0348811DBCE8B30044CE11 /* settingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0348801DBCE8B30044CE11 /* settingsVC.swift */; };
 		CE0CBEF11D96BC64000FA4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBEF01D96BC64000FA4A3 /* AppDelegate.swift */; };
 		CE0CBEF31D96BC64000FA4A3 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBEF21D96BC64000FA4A3 /* SignInVC.swift */; };
 		CE0CBEF61D96BC64000FA4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0CBEF41D96BC64000FA4A3 /* Main.storyboard */; };
 		CE0CBEF91D96BC64000FA4A3 /* Socialite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBEF71D96BC64000FA4A3 /* Socialite.xcdatamodeld */; };
-		CE0CBEFB1D96BC65000FA4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0CBEFA1D96BC65000FA4A3 /* Assets.xcassets */; };
 		CE0CBEFE1D96BC65000FA4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0CBEFC1D96BC65000FA4A3 /* LaunchScreen.storyboard */; };
 		CE0CBF0D1D96BCD1000FA4A3 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE0CBF091D96BCD1000FA4A3 /* NotoSans-Bold.ttf */; };
 		CE0CBF0E1D96BCD1000FA4A3 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE0CBF0A1D96BCD1000FA4A3 /* NotoSans-BoldItalic.ttf */; };
@@ -28,17 +29,20 @@
 		CE0CBF221D99BBEF000FA4A3 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF211D99BBEF000FA4A3 /* PostCell.swift */; };
 		CE0CBF241D9B18F3000FA4A3 /* MaterialImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF231D9B18F3000FA4A3 /* MaterialImage.swift */; };
 		CE0CBF271D9ED41F000FA4A3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF261D9ED41F000FA4A3 /* Post.swift */; };
+		CE4307911DDFCC31006330C5 /* editPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4307901DDFCC31006330C5 /* editPostVC.swift */; };
+		CE4307931DE3A047006330C5 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4307921DE3A047006330C5 /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E8A74CE72C6E55FA9760558 /* Pods-Socialite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socialite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Socialite/Pods-Socialite.release.xcconfig"; sourceTree = "<group>"; };
 		B1334EEB4EA678B20DD8607F /* Pods-Socialite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socialite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Socialite/Pods-Socialite.debug.xcconfig"; sourceTree = "<group>"; };
+		CE03487E1DBCE6FD0044CE11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE0348801DBCE8B30044CE11 /* settingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsVC.swift; sourceTree = "<group>"; };
 		CE0CBEED1D96BC64000FA4A3 /* Socialite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socialite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0CBEF01D96BC64000FA4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0CBEF21D96BC64000FA4A3 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		CE0CBEF51D96BC64000FA4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE0CBEF81D96BC64000FA4A3 /* Socialite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Socialite.xcdatamodel; sourceTree = "<group>"; };
-		CE0CBEFA1D96BC65000FA4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0CBEFD1D96BC65000FA4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0CBEFF1D96BC65000FA4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0CBF091D96BCD1000FA4A3 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -55,6 +59,9 @@
 		CE0CBF211D99BBEF000FA4A3 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CE0CBF231D9B18F3000FA4A3 /* MaterialImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialImage.swift; sourceTree = "<group>"; };
 		CE0CBF261D9ED41F000FA4A3 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CE22537C1DB6C60B00840348 /* Socialite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Socialite.entitlements; sourceTree = "<group>"; };
+		CE4307901DDFCC31006330C5 /* editPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editPostVC.swift; sourceTree = "<group>"; };
+		CE4307921DE3A047006330C5 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		FF0FE8FDFB11B28A54DAFAAF /* Pods_Socialite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Socialite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +115,7 @@
 		CE0CBEEF1D96BC64000FA4A3 /* Socialite */ = {
 			isa = PBXGroup;
 			children = (
+				CE22537C1DB6C60B00840348 /* Socialite.entitlements */,
 				CE0CBF1A1D980EF6000FA4A3 /* Services */,
 				CE0CBF131D96BF5F000FA4A3 /* Util */,
 				CE0CBF081D96BCA8000FA4A3 /* Resources */,
@@ -116,7 +124,7 @@
 				CE0CBF051D96BC76000FA4A3 /* Controller */,
 				CE0CBEF01D96BC64000FA4A3 /* AppDelegate.swift */,
 				CE0CBEF41D96BC64000FA4A3 /* Main.storyboard */,
-				CE0CBEFA1D96BC65000FA4A3 /* Assets.xcassets */,
+				CE03487E1DBCE6FD0044CE11 /* Assets.xcassets */,
 				CE0CBEFC1D96BC65000FA4A3 /* LaunchScreen.storyboard */,
 				CE0CBEFF1D96BC65000FA4A3 /* Info.plist */,
 				CE0CBF1D1D981079000FA4A3 /* GoogleService-Info.plist */,
@@ -130,6 +138,8 @@
 			children = (
 				CE0CBEF21D96BC64000FA4A3 /* SignInVC.swift */,
 				CE0CBF1F1D9864A1000FA4A3 /* FeedVC.swift */,
+				CE0348801DBCE8B30044CE11 /* settingsVC.swift */,
+				CE4307901DDFCC31006330C5 /* editPostVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +152,7 @@
 				CE0CBF181D96D19D000FA4A3 /* MaterialTextField.swift */,
 				CE0CBF211D99BBEF000FA4A3 /* PostCell.swift */,
 				CE0CBF231D9B18F3000FA4A3 /* MaterialImage.swift */,
+				CE4307921DE3A047006330C5 /* CommentCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -211,11 +222,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "David Kennedy";
 				TargetAttributes = {
 					CE0CBEEC1D96BC64000FA4A3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = TH7X3HRX2H;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -247,8 +265,8 @@
 				CE0CBEFE1D96BC65000FA4A3 /* LaunchScreen.storyboard in Resources */,
 				CE0CBF0E1D96BCD1000FA4A3 /* NotoSans-BoldItalic.ttf in Resources */,
 				CE0CBF0F1D96BCD1000FA4A3 /* NotoSans-Italic.ttf in Resources */,
-				CE0CBEFB1D96BC65000FA4A3 /* Assets.xcassets in Resources */,
 				CE0CBEF61D96BC64000FA4A3 /* Main.storyboard in Resources */,
+				CE03487F1DBCE6FD0044CE11 /* Assets.xcassets in Resources */,
 				CE0CBF101D96BCD1000FA4A3 /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +331,7 @@
 				CE0CBEF31D96BC64000FA4A3 /* SignInVC.swift in Sources */,
 				CE0CBF271D9ED41F000FA4A3 /* Post.swift in Sources */,
 				CE0CBF171D96C30A000FA4A3 /* MaterialButton.swift in Sources */,
+				CE4307931DE3A047006330C5 /* CommentCell.swift in Sources */,
 				CE0CBEF91D96BC64000FA4A3 /* Socialite.xcdatamodeld in Sources */,
 				CE0CBEF11D96BC64000FA4A3 /* AppDelegate.swift in Sources */,
 				CE0CBF1C1D980F06000FA4A3 /* DataService.swift in Sources */,
@@ -320,6 +339,8 @@
 				CE0CBF191D96D19D000FA4A3 /* MaterialTextField.swift in Sources */,
 				CE0CBF221D99BBEF000FA4A3 /* PostCell.swift in Sources */,
 				CE0CBF241D9B18F3000FA4A3 /* MaterialImage.swift in Sources */,
+				CE4307911DDFCC31006330C5 /* editPostVC.swift in Sources */,
+				CE0348811DBCE8B30044CE11 /* settingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +380,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -405,8 +428,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -425,6 +450,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -434,11 +460,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1334EEB4EA678B20DD8607F /* Pods-Socialite.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Socialite/Socialite.entitlements;
+				DEVELOPMENT_TEAM = TH7X3HRX2H;
 				INFOPLIST_FILE = Socialite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DavidKennedy.Socialite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -446,11 +476,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E8A74CE72C6E55FA9760558 /* Pods-Socialite.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Socialite/Socialite.entitlements;
+				DEVELOPMENT_TEAM = TH7X3HRX2H;
 				INFOPLIST_FILE = Socialite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DavidKennedy.Socialite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
